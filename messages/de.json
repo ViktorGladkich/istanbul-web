@@ -15,7 +15,59 @@
   "about": {
     "eyebrow": "Unser Haus",
     "title": "Eine stille\nHommage an İstanbul.",
-    "body": "Drei Generationen, eine Küche. Wir kochen für die wenigen Gäste, die wir heute Abend bewirten — mit Gewürzen, die wir selbst rösten, und Brot, das wir von Hand schlagen. Kein Spektakel. Nur Geschmack."
+    "body": "Drei Generationen, eine Küche. Wir kochen für die wenigen Gäste, die wir heute Abend bewirten — mit Gewürzen, die wir selbst rösten, und Brot, das wir von Hand schlagen. Kein Spektakel. Nur Geschmack.",
+    "page_title": "Drei Generationen,\neine Küche.",
+    "lede": "Eine kleine Küche an der Elbe — geführt mit derselben Geduld, mit der unsere Mutter in Adana ihren Pilav rührte.",
+    "story": {
+      "eyebrow": "Geschichte",
+      "title": "Wie alles begann.",
+      "p1": "1987 öffnete Mehmet Yıldız die Türen einer kleinen Küche an der Elbe. Er kochte das, was seine Mutter in Adana gekocht hatte: lange geschmorte Auberginen, frisch gehacktes Lammfleisch, Brot, das er mit den Händen schlug.",
+      "p2": "Heute arbeiten drei Generationen in derselben Küche. Wir rösten unsere Gewürze noch immer selbst — jeden Morgen, bevor der erste Gast kommt. Wir kaufen klein ein, bei den gleichen vier Bauern, mit denen wir seit zwanzig Jahren arbeiten.",
+      "p3": "Was sich nicht geändert hat: das Brot wird von Hand geknetet. Die Tomaten kommen aus einem Garten in Sachsen. Der Joghurt entsteht in unserer Küche. Und wir kochen für die wenigen Gäste, die wir an einem Abend bewirten — nicht für tausend."
+    },
+    "quote": {
+      "text": "Wir kochen nicht für viele. Wir kochen für den Tisch, der heute Abend kommt.",
+      "author": "Mehmet Yıldız",
+      "role": "Gründer"
+    },
+    "values": {
+      "eyebrow": "Was uns leitet",
+      "title": "Drei Hände.\nEin Versprechen.",
+      "items": {
+        "hand": {
+          "title": "Mit der Hand",
+          "body": "Brot, Joghurt, Mezeler — alles entsteht in unserer Küche. Keine Zutat, die wir nicht selbst zubereiten könnten, kommt auf den Teller."
+        },
+        "patience": {
+          "title": "Mit Geduld",
+          "body": "Manche Gerichte schmoren acht Stunden. Wir nehmen uns Zeit, weil Geschmack Zeit braucht — und weil ein Gast es schmecken kann."
+        },
+        "place": {
+          "title": "Mit Ort",
+          "body": "Unsere Tomaten wachsen in Sachsen. Unser Lamm kommt aus dem Erzgebirge. Eine türkische Küche in Dresden — und das schmeckt man auch."
+        }
+      }
+    },
+    "cta": "Speisekarte ansehen"
+  },
+  "contact": {
+    "eyebrow": "Besuchen Sie uns",
+    "title": "Wir freuen uns\nauf Ihren Besuch.",
+    "lede": "Reservierungen telefonisch oder per E-Mail. Für größere Tische und besondere Anlässe schreiben Sie uns einfach — wir richten Ihren Abend ein.",
+    "labels": {
+      "address": "Adresse",
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "hours": "Öffnungszeiten",
+      "map": "Karte"
+    },
+    "hours_value": "Mo – Sa\n12:00 – 23:00\n\nSonntag\n13:00 – 22:00",
+    "cta_call": "Anrufen",
+    "cta_directions": "Route in Google Maps",
+    "reservation": {
+      "eyebrow": "Reservierung",
+      "body": "Bitte reservieren Sie telefonisch oder per E-Mail. Wir antworten in der Regel am gleichen Tag."
+    }
   },
   "menu_preview": {
     "eyebrow": "Aus der Küche",

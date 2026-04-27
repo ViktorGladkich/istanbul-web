@@ -85,9 +85,16 @@ export function CheckoutForm({
     mode: "onTouched",
   });
 
-  // Keep table prefill in sync if the QR query lands after mount.
+  // Keep table prefill in sync. Priority: explicit URL `?table=` → sessionStorage
+  // (left there by the QR landing on /menu).
   useEffect(() => {
-    if (prefilledTable) setValue("tableNumber", prefilledTable);
+    if (prefilledTable) {
+      setValue("tableNumber", prefilledTable);
+      return;
+    }
+    if (typeof window === "undefined") return;
+    const stored = window.sessionStorage.getItem("istanbul-table");
+    if (stored) setValue("tableNumber", stored);
   }, [prefilledTable, setValue]);
 
   const orderType = watch("orderType");
