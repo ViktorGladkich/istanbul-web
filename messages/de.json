@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "menu": "Speisekarte",
+    "order": "Bestellen",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Authentische Türkische Küche",
+    "subtitle": "Erleben Sie die Aromen Istanbuls mitten in Dresden",
+    "cta_menu": "Speisekarte entdecken",
+    "cta_order": "Jetzt bestellen"
+  },
+  "about": {
+    "eyebrow": "Unser Haus",
+    "title": "Eine stille\nHommage an İstanbul.",
+    "body": "Drei Generationen, eine Küche. Wir kochen für die wenigen Gäste, die wir heute Abend bewirten — mit Gewürzen, die wir selbst rösten, und Brot, das wir von Hand schlagen. Kein Spektakel. Nur Geschmack."
+  },
+  "menu_preview": {
+    "eyebrow": "Aus der Küche",
+    "title": "Drei Klassiker.",
+    "lede": "Eine Auswahl aus der heutigen Karte.",
+    "cta": "Vollständige Karte ansehen",
+    "dishes": {
+      "adana": {
+        "name": "Adana Kebap",
+        "desc": "Handgehacktes Lammfleisch, pul biber, auf Holzkohle.",
+        "price": "€ 24"
+      },
+      "imam": {
+        "name": "İmam Bayıldı",
+        "desc": "Geschmorte Aubergine, Tomate aus dem Garten, Olivenöl.",
+        "price": "€ 14"
+      },
+      "kunefe": {
+        "name": "Künefe",
+        "desc": "Kadayıf, frischer Käse, warmer Sirup.",
+        "price": "€ 11"
+      }
+    }
+  },
+  "menu": {
+    "eyebrow": "Speisekarte",
+    "title": "Was heute\nauf den Tisch kommt.",
+    "lede": "Eine kleine, von Hand kuratierte Karte. Sie ändert sich, wenn der Markt es verlangt.",
+    "filter_label": "Kategorie",
+    "all": "Alles",
+    "add": "Hinzufügen",
+    "added": "Hinzugefügt",
+    "empty": "In dieser Kategorie ist heute Abend nichts dabei.",
+    "tags": {
+      "vegetarian": "Vegetarisch",
+      "spicy": "Scharf"
+    },
+    "categories": {
+      "meze": "Mezeler",
+      "ana_yemek": "Hauptgerichte",
+      "kebab": "Kebap",
+      "icecek": "Getränke",
+      "tatli": "Tatlı"
+    }
+  },
+  "cart": {
+    "title": "Ihr Tisch",
+    "open": "Warenkorb öffnen",
+    "close": "Schließen",
+    "empty_title": "Noch nichts ausgewählt.",
+    "empty_lede": "Sehen Sie sich die Karte an und fügen Sie hinzu, was Ihnen gefällt.",
+    "view_menu": "Zur Speisekarte",
+    "subtotal": "Zwischensumme",
+    "total": "Gesamt",
+    "checkout": "Zur Kasse",
+    "remove": "Entfernen",
+    "qty_increase": "Menge erhöhen",
+    "qty_decrease": "Menge verringern",
+    "added_toast": "{name} zum Tisch hinzugefügt"
+  },
+  "order": {
+    "eyebrow": "Bestellung",
+    "title": "Bestellung\nbestätigen.",
+    "lede": "Wir bereiten alles frisch zu, sobald die Zahlung eingeht. Bitte hinterlassen Sie uns eine Telefonnummer, falls wir uns kurz melden müssen.",
+    "empty": {
+      "title": "Ihr Tisch ist leer.",
+      "lede": "Wählen Sie zuerst etwas auf der Speisekarte aus. Wir warten hier auf Sie.",
+      "cta": "Zur Speisekarte"
+    },
+    "summary": {
+      "eyebrow": "Ihre Auswahl",
+      "items": "{count, plural, one {# Gericht} other {# Gerichte}}",
+      "qty": "Menge",
+      "subtotal": "Zwischensumme",
+      "total": "Gesamt",
+      "note": "Inkl. Mehrwertsteuer. Trinkgeld nach Ermessen."
+    },
+    "form": {
+      "eyebrow": "Ihre Angaben",
+      "type": {
+        "label": "Wie möchten Sie bestellen?",
+        "dine_in": "Im Restaurant",
+        "takeaway": "Zum Mitnehmen"
+      },
+      "table": {
+        "label": "Tischnummer",
+        "placeholder": "z. B. 04",
+        "help": "Sie finden die Nummer auf dem QR-Karton am Tisch."
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "Vor- und Nachname"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+49 351 …"
+      },
+      "email": {
+        "label": "E-Mail (optional)",
+        "placeholder": "name@email.de",
+        "help": "Wir senden Ihnen die Bestätigung per E-Mail."
+      },
+      "notes": {
+        "label": "Anmerkungen (optional)",
+        "placeholder": "Allergien, Wünsche an die Küche …"
+      },
+      "submit": "Weiter zur Zahlung",
+      "submitting": "Einen Moment …",
+      "errors": {
+        "required": "Bitte ausfüllen.",
+        "name_min": "Bitte geben Sie Ihren Namen an.",
+        "phone_min": "Bitte geben Sie eine erreichbare Nummer an.",
+        "phone_format": "Bitte nur Ziffern, Plus und Bindestriche.",
+        "email_invalid": "Bitte eine gültige E-Mail-Adresse.",
+        "table_required": "Bitte Tischnummer eingeben.",
+        "items_required": "Ihr Tisch ist leer.",
+        "generic": "Etwas ist schiefgegangen. Bitte versuchen Sie es erneut."
+      }
+    },
+    "canceled": {
+      "title": "Zahlung abgebrochen.",
+      "body": "Kein Problem — Ihre Auswahl ist noch da. Sie können die Bestellung jederzeit erneut absenden."
+    },
+    "success": {
+      "eyebrow": "Bestätigt",
+      "title": "Vielen Dank.\nWir kochen für Sie.",
+      "lede": "Wir haben Ihre Bestellung erhalten und beginnen mit der Zubereitung. Eine Bestätigung kommt per E-Mail.",
+      "order_no": "Bestellnummer",
+      "status_label": "Status",
+      "total": "Bezahlt",
+      "back_home": "Zurück zur Startseite",
+      "view_menu": "Speisekarte ansehen",
+      "missing_session": "Diese Bestellung können wir nicht finden. Bitte wenden Sie sich an das Restaurant."
+    },
+    "status": {
+      "pending_payment": "Zahlung ausstehend",
+      "paid": "Bezahlt",
+      "preparing": "In Zubereitung",
+      "ready": "Bereit",
+      "delivered": "Ausgeliefert",
+      "canceled": "Storniert"
+    },
+    "toasts": {
+      "success": "Bestellung gesendet — wir kochen los.",
+      "error_validation": "Bitte prüfen Sie die markierten Felder.",
+      "error_generic": "Wir konnten die Bestellung nicht senden. Bitte erneut versuchen."
+    }
+  },
+  "lieferando": {
+    "eyebrow": "Lieferung",
+    "title": "Liefern lassen?\nÜber Lieferando.",
+    "body": "Wir kochen im Restaurant. Für die Lieferung bis vor Ihre Tür arbeitet unsere Küche mit Lieferando — die gleiche Karte, die gleichen Hände.",
+    "cta": "Auf Lieferando öffnen"
+  },
+  "footer": {
+    "tagline": "Türkische Küche aus Dresden — von Hand, ohne Spektakel.",
+    "address": "Adresse",
+    "hours": "Öffnungszeiten",
+    "hours_value": "Mo – So\n12:00 – 23:00",
+    "follow": "Folgen Sie uns",
+    "delivery_label": "Lieferung",
+    "delivery": "Lieferando",
+    "rights": "© {year} Istanbul Restaurant Dresden",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz"
+  }
+}

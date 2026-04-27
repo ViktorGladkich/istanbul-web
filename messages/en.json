@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "order": "Order Online",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Authentic Turkish Cuisine",
+    "subtitle": "Experience the flavors of Istanbul in the heart of Dresden",
+    "cta_menu": "Explore Menu",
+    "cta_order": "Order Now"
+  },
+  "about": {
+    "eyebrow": "Our House",
+    "title": "A quiet homage\nto İstanbul.",
+    "body": "Three generations, a single kitchen. We cook for the few guests we welcome tonight — with spices we toast ourselves and bread we knead by hand. No spectacle. Just taste."
+  },
+  "menu_preview": {
+    "eyebrow": "From the Kitchen",
+    "title": "Three classics.",
+    "lede": "A small selection from tonight's card.",
+    "cta": "View the full menu",
+    "dishes": {
+      "adana": {
+        "name": "Adana Kebap",
+        "desc": "Hand-cut lamb, pul biber, over charcoal.",
+        "price": "€ 24"
+      },
+      "imam": {
+        "name": "İmam Bayıldı",
+        "desc": "Slow-braised aubergine, garden tomato, olive oil.",
+        "price": "€ 14"
+      },
+      "kunefe": {
+        "name": "Künefe",
+        "desc": "Kadayıf, fresh cheese, warm syrup.",
+        "price": "€ 11"
+      }
+    }
+  },
+  "menu": {
+    "eyebrow": "Menu",
+    "title": "What lands\non the table tonight.",
+    "lede": "A small, hand-curated list. It shifts when the market asks it to.",
+    "filter_label": "Category",
+    "all": "All",
+    "add": "Add",
+    "added": "Added",
+    "empty": "Nothing in this category tonight.",
+    "tags": {
+      "vegetarian": "Vegetarian",
+      "spicy": "Spicy"
+    },
+    "categories": {
+      "meze": "Mezeler",
+      "ana_yemek": "Mains",
+      "kebab": "Kebap",
+      "icecek": "Drinks",
+      "tatli": "Tatlı"
+    }
+  },
+  "cart": {
+    "title": "Your table",
+    "open": "Open cart",
+    "close": "Close",
+    "empty_title": "Nothing chosen yet.",
+    "empty_lede": "Browse the menu and add what speaks to you.",
+    "view_menu": "View the menu",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Checkout",
+    "remove": "Remove",
+    "qty_increase": "Increase quantity",
+    "qty_decrease": "Decrease quantity",
+    "added_toast": "{name} added to your table"
+  },
+  "order": {
+    "eyebrow": "Order",
+    "title": "Confirm\nyour table.",
+    "lede": "We start cooking the moment payment lands. Leave a number in case the kitchen needs to call.",
+    "empty": {
+      "title": "Your table is empty.",
+      "lede": "Pick a few things from the menu first. We'll be here.",
+      "cta": "View the menu"
+    },
+    "summary": {
+      "eyebrow": "Your selection",
+      "items": "{count, plural, one {# dish} other {# dishes}}",
+      "qty": "Quantity",
+      "subtotal": "Subtotal",
+      "total": "Total",
+      "note": "VAT included. Tipping at your discretion."
+    },
+    "form": {
+      "eyebrow": "Your details",
+      "type": {
+        "label": "How would you like to order?",
+        "dine_in": "Dining in",
+        "takeaway": "Takeaway"
+      },
+      "table": {
+        "label": "Table number",
+        "placeholder": "e.g. 04",
+        "help": "You'll find it on the QR card at your table."
+      },
+      "name": {
+        "label": "Name",
+        "placeholder": "First and last name"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+49 351 …"
+      },
+      "email": {
+        "label": "Email (optional)",
+        "placeholder": "name@email.com",
+        "help": "We'll send the confirmation by email."
+      },
+      "notes": {
+        "label": "Notes (optional)",
+        "placeholder": "Allergies, requests for the kitchen …"
+      },
+      "submit": "Continue to payment",
+      "submitting": "One moment …",
+      "errors": {
+        "required": "Please fill this in.",
+        "name_min": "Please share your name.",
+        "phone_min": "Please share a working number.",
+        "phone_format": "Digits, plus, and dashes only.",
+        "email_invalid": "Please enter a valid email.",
+        "table_required": "Please enter your table number.",
+        "items_required": "Your table is empty.",
+        "generic": "Something went wrong. Please try again."
+      }
+    },
+    "canceled": {
+      "title": "Payment canceled.",
+      "body": "No worries — your selection is still here. Send the order again whenever you're ready."
+    },
+    "success": {
+      "eyebrow": "Confirmed",
+      "title": "Thank you.\nWe're cooking.",
+      "lede": "We've received your order and started preparing it. A confirmation email is on its way.",
+      "order_no": "Order number",
+      "status_label": "Status",
+      "total": "Paid",
+      "back_home": "Back to home",
+      "view_menu": "View the menu",
+      "missing_session": "We can't find this order. Please reach out to the restaurant."
+    },
+    "status": {
+      "pending_payment": "Awaiting payment",
+      "paid": "Paid",
+      "preparing": "Preparing",
+      "ready": "Ready",
+      "delivered": "Delivered",
+      "canceled": "Canceled"
+    },
+    "toasts": {
+      "success": "Order placed — the kitchen is on it.",
+      "error_validation": "Please check the highlighted fields.",
+      "error_generic": "We couldn't send the order. Please try again."
+    }
+  },
+  "lieferando": {
+    "eyebrow": "Delivery",
+    "title": "Want it delivered?\nThrough Lieferando.",
+    "body": "We cook in the restaurant. For delivery to your door, our kitchen partners with Lieferando — the same menu, the same hands.",
+    "cta": "Open in Lieferando"
+  },
+  "footer": {
+    "tagline": "Turkish cuisine from Dresden — by hand, without spectacle.",
+    "address": "Address",
+    "hours": "Opening Hours",
+    "hours_value": "Mon – Sun\n12:00 – 23:00",
+    "follow": "Follow Us",
+    "delivery_label": "Delivery",
+    "delivery": "Lieferando",
+    "rights": "© {year} Istanbul Restaurant Dresden",
+    "imprint": "Imprint",
+    "privacy": "Privacy"
+  }
+}

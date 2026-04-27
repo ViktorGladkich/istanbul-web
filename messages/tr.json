@@ -1,0 +1,185 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "menu": "Menü",
+    "order": "Sipariş Ver",
+    "about": "Hakkımızda",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Otantik Türk Mutfağı",
+    "subtitle": "İstanbul'un lezzetlerini Dresden'de yaşayın",
+    "cta_menu": "Menüyü keşfedin",
+    "cta_order": "Şimdi sipariş ver"
+  },
+  "about": {
+    "eyebrow": "Bizim Evimiz",
+    "title": "İstanbul'a sessiz\nbir saygı duruşu.",
+    "body": "Üç kuşak, tek bir mutfak. Bu akşam ağırlayacağımız sınırlı sayıda misafir için pişiriyoruz — baharatlarımızı kendimiz kavuruyor, ekmeğimizi elde yoğuruyoruz. Gösteriş yok. Yalnızca lezzet."
+  },
+  "menu_preview": {
+    "eyebrow": "Mutfaktan",
+    "title": "Üç klasik.",
+    "lede": "Bugünün menüsünden bir seçki.",
+    "cta": "Menünün tamamını görün",
+    "dishes": {
+      "adana": {
+        "name": "Adana Kebap",
+        "desc": "Elde kıyılmış kuzu, pul biber, kömür ateşinde.",
+        "price": "€ 24"
+      },
+      "imam": {
+        "name": "İmam Bayıldı",
+        "desc": "Yavaş pişmiş patlıcan, bahçe domatesi, zeytinyağı.",
+        "price": "€ 14"
+      },
+      "kunefe": {
+        "name": "Künefe",
+        "desc": "Kadayıf, taze peynir, sıcak şerbet.",
+        "price": "€ 11"
+      }
+    }
+  },
+  "menu": {
+    "eyebrow": "Menü",
+    "title": "Bu akşam\nsofraya gelenler.",
+    "lede": "Küçük, elle hazırlanmış bir liste. Pazar ne sunarsa, menü onu söyler.",
+    "filter_label": "Kategori",
+    "all": "Hepsi",
+    "add": "Ekle",
+    "added": "Eklendi",
+    "empty": "Bu kategoride bu akşam bir şey yok.",
+    "tags": {
+      "vegetarian": "Vejetaryen",
+      "spicy": "Acılı"
+    },
+    "categories": {
+      "meze": "Mezeler",
+      "ana_yemek": "Ana Yemekler",
+      "kebab": "Kebap",
+      "icecek": "İçecekler",
+      "tatli": "Tatlılar"
+    }
+  },
+  "cart": {
+    "title": "Sofranız",
+    "open": "Sepeti aç",
+    "close": "Kapat",
+    "empty_title": "Henüz bir şey seçilmedi.",
+    "empty_lede": "Menüye göz atın, beğendiklerinizi ekleyin.",
+    "view_menu": "Menüye git",
+    "subtotal": "Ara toplam",
+    "total": "Toplam",
+    "checkout": "Ödemeye geç",
+    "remove": "Kaldır",
+    "qty_increase": "Adeti artır",
+    "qty_decrease": "Adeti azalt",
+    "added_toast": "{name} sofraya eklendi"
+  },
+  "order": {
+    "eyebrow": "Sipariş",
+    "title": "Siparişi\nonaylayın.",
+    "lede": "Ödeme alındığı anda her şeyi taze hazırlıyoruz. Gerektiğinde size kısaca ulaşabilmemiz için lütfen telefon numarası bırakın.",
+    "empty": {
+      "title": "Sofranız boş.",
+      "lede": "Önce menüden bir şeyler seçin. Biz buradayız, bekliyoruz.",
+      "cta": "Menüye git"
+    },
+    "summary": {
+      "eyebrow": "Seçimleriniz",
+      "items": "{count, plural, one {# yemek} other {# yemek}}",
+      "qty": "Adet",
+      "subtotal": "Ara toplam",
+      "total": "Toplam",
+      "note": "KDV dahildir. Bahşiş takdirinize bırakılmıştır."
+    },
+    "form": {
+      "eyebrow": "Bilgileriniz",
+      "type": {
+        "label": "Nasıl sipariş vermek istersiniz?",
+        "dine_in": "Restoranda",
+        "takeaway": "Paket"
+      },
+      "table": {
+        "label": "Masa numarası",
+        "placeholder": "ör. 04",
+        "help": "Numarayı masadaki QR kartının üzerinde bulabilirsiniz."
+      },
+      "name": {
+        "label": "Ad Soyad",
+        "placeholder": "Adınız ve soyadınız"
+      },
+      "phone": {
+        "label": "Telefon",
+        "placeholder": "+49 351 …"
+      },
+      "email": {
+        "label": "E-posta (isteğe bağlı)",
+        "placeholder": "isim@eposta.com",
+        "help": "Onayı e-posta ile göndereceğiz."
+      },
+      "notes": {
+        "label": "Notlar (isteğe bağlı)",
+        "placeholder": "Alerjiler, mutfağa istekler …"
+      },
+      "submit": "Ödemeye geç",
+      "submitting": "Bir saniye …",
+      "errors": {
+        "required": "Lütfen doldurun.",
+        "name_min": "Lütfen adınızı girin.",
+        "phone_min": "Ulaşılabilir bir numara girin.",
+        "phone_format": "Yalnızca rakam, artı ve tire kabul edilir.",
+        "email_invalid": "Geçerli bir e-posta girin.",
+        "table_required": "Masa numarasını girin.",
+        "items_required": "Sofranız boş.",
+        "generic": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+      }
+    },
+    "canceled": {
+      "title": "Ödeme iptal edildi.",
+      "body": "Sorun değil — seçimleriniz duruyor. Siparişi istediğiniz an yeniden gönderebilirsiniz."
+    },
+    "success": {
+      "eyebrow": "Onaylandı",
+      "title": "Teşekkür ederiz.\nSizin için pişiriyoruz.",
+      "lede": "Siparişinizi aldık ve hazırlamaya başlıyoruz. Onay e-postanız yolda.",
+      "order_no": "Sipariş numarası",
+      "status_label": "Durum",
+      "total": "Ödenen",
+      "back_home": "Ana sayfaya dön",
+      "view_menu": "Menüyü görüntüle",
+      "missing_session": "Bu siparişi bulamıyoruz. Lütfen restoranla iletişime geçin."
+    },
+    "status": {
+      "pending_payment": "Ödeme bekleniyor",
+      "paid": "Ödendi",
+      "preparing": "Hazırlanıyor",
+      "ready": "Hazır",
+      "delivered": "Teslim edildi",
+      "canceled": "İptal edildi"
+    },
+    "toasts": {
+      "success": "Sipariş gönderildi — ocak yanıyor.",
+      "error_validation": "Lütfen işaretli alanları kontrol edin.",
+      "error_generic": "Siparişi gönderemedik. Lütfen tekrar deneyin."
+    }
+  },
+  "lieferando": {
+    "eyebrow": "Teslimat",
+    "title": "Eve mi gelsin?\nLieferando ile.",
+    "body": "Biz restoranda pişiriyoruz. Kapınıza kadar teslimat için Lieferando ile çalışıyoruz — aynı menü, aynı eller.",
+    "cta": "Lieferando'da aç"
+  },
+  "footer": {
+    "tagline": "Dresden'den Türk mutfağı — elde, gösterişsiz.",
+    "address": "Adres",
+    "hours": "Çalışma Saatleri",
+    "hours_value": "Pzt – Paz\n12:00 – 23:00",
+    "follow": "Bizi Takip Edin",
+    "delivery_label": "Teslimat",
+    "delivery": "Lieferando",
+    "rights": "© {year} Istanbul Restaurant Dresden",
+    "imprint": "Künye",
+    "privacy": "Gizlilik"
+  }
+}

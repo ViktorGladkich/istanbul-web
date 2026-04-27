@@ -1,0 +1,62 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model MenuItem {
+  id           String      @id @default(cuid())
+  nameDE       String
+  nameTR       String
+  nameEN       String
+  descDE       String?
+  descTR       String?
+  descEN       String?
+  price        Float
+  category     String
+  imageUrl     String?
+  isAvailable  Boolean     @default(true)
+  isSpicy      Boolean     @default(false)
+  isVegetarian Boolean     @default(false)
+  sortOrder    Int         @default(0)
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+  orderItems   OrderItem[]
+}
+
+model Order {
+  id                String      @id @default(cuid())
+  tableNumber       String?
+  orderType         String      @default("dine_in")
+  status            String      @default("pending_payment")
+  totalAmount       Float
+  stripePaymentId   String?     @unique
+  stripeSessionId   String?     @unique
+  customerName      String?
+  customerPhone     String?
+  customerEmail     String?
+  customerAddress   String?
+  notes             String?
+  items             OrderItem[]
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+}
+
+model OrderItem {
+  id         String   @id @default(cuid())
+  orderId    String
+  menuItemId String
+  quantity   Int
+  price      Float
+  order      Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  menuItem   MenuItem @relation(fields: [menuItemId], references: [id])
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+}
