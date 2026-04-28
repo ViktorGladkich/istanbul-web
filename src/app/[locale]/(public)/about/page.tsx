@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { BlurImage as Image } from "@/components/media/BlurImage";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { Reveal } from "@/components/animation/Reveal";
@@ -69,7 +69,7 @@ export default async function AboutPage({
           </div>
 
           {/* WIDE STORY IMAGE — between heading and paragraphs */}
-          <Reveal delay={200}>
+          <Reveal mode="clip" delay={200}>
             <figure className="relative mt-16 aspect-[16/9] w-full overflow-hidden bg-[var(--brand-card)] md:mt-20 md:aspect-[21/9]">
               <Image
                 src="/images/about-story.jpg"
@@ -117,10 +117,10 @@ export default async function AboutPage({
       <section className="bg-[var(--brand-card)]/40 py-24 md:py-40">
         <div className="mx-auto max-w-[1400px] px-6 md:px-12">
           <div className="grid grid-cols-12 items-center gap-x-12 gap-y-12">
-            <Reveal className="col-span-12 md:col-span-5">
+            <Reveal mode="clip" className="col-span-12 md:col-span-5">
               <figure className="relative aspect-[4/5] w-full overflow-hidden bg-[var(--brand-bg)]">
                 <Image
-                  src="/images/founder.jpg"
+                  src="/images/grunder.jpeg"
                   alt={t("quote.author")}
                   fill
                   sizes="(min-width: 768px) 40vw, 100vw"

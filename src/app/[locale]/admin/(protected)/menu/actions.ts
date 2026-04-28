@@ -40,3 +40,31 @@ export async function updateMenuPrice(id: string, newPrice: number) {
   });
   revalidatePublicMenus();
 }
+
+/**
+ * Toggle the "Tonight's Table" feature flag. Only one item may be featured
+ * at a time — flipping a new one clears any previous featured row in the
+ * same transaction so the home banner shows exactly one dish.
+ */
+export async function toggleFeaturedToday(id: string, next: boolean) {
+  await requireAdmin();
+  const safeId = idSchema.parse(id);
+  if (next) {
+    await prisma.$transaction([
+      prisma.menuItem.updateMany({
+        where: { isFeaturedToday: true, NOT: { id: safeId } },
+        data: { isFeaturedToday: false },
+      }),
+      prisma.menuItem.update({
+        where: { id: safeId },
+        data: { isFeaturedToday: true },
+      }),
+    ]);
+  } else {
+    await prisma.menuItem.update({
+      where: { id: safeId },
+      data: { isFeaturedToday: false },
+    });
+  }
+  revalidatePublicMenus();
+}

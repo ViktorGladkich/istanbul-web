@@ -20,6 +20,7 @@ model MenuItem {
   isAvailable  Boolean     @default(true)
   isSpicy      Boolean     @default(false)
   isVegetarian Boolean     @default(false)
+  isFeaturedToday Boolean  @default(false)
   sortOrder    Int         @default(0)
   createdAt    DateTime    @default(now())
   updatedAt    DateTime    @updatedAt

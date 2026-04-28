@@ -6,6 +6,9 @@
     "about": "About",
     "contact": "Contact"
   },
+  "common": {
+    "reserve": "Reserve"
+  },
   "hero": {
     "title": "Authentic Turkish Cuisine",
     "subtitle": "Experience the flavors of Istanbul in the heart of Dresden",
@@ -215,6 +218,9 @@
       "error_validation": "Please check the highlighted fields.",
       "error_generic": "We couldn't send the order. Please try again."
     }
+  },
+  "tonight": {
+    "eyebrow": "On the table tonight"
   },
   "atmosphere": {
     "eyebrow": "Inside",

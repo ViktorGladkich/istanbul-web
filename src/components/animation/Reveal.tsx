@@ -14,6 +14,11 @@ type Props = {
   style?: CSSProperties;
   /** translate distance in px (default 30) */
   distance?: number;
+  /**
+   * "fade"  — translateY + opacity (default, for text/blocks).
+   * "clip"  — curtain reveal via clip-path inset, for large images.
+   */
+  mode?: "fade" | "clip";
 };
 
 export function Reveal({
@@ -22,13 +27,40 @@ export function Reveal({
   className = "",
   style,
   distance = 30,
+  mode = "fade",
 }: Props) {
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  // Fire only when the element is meaningfully inside the viewport.
+  // rootMargin shrinks the bottom edge of the observer so the trigger
+  // happens after the top of the element has crossed ~12% into view —
+  // the user is looking at the section when the animation plays.
+  const { ref, inView } = useInView({
+    threshold: 0,
+    rootMargin: "0px 0px -12% 0px",
+    triggerOnce: true,
+  });
   const reduced = useReducedMotion();
 
   if (reduced) {
     return (
       <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
+
+  if (mode === "clip") {
+    return (
+      <div
+        ref={ref}
+        className={className}
+        style={{
+          clipPath: inView ? "inset(0 0 0 0)" : "inset(100% 0 0 0)",
+          WebkitClipPath: inView ? "inset(0 0 0 0)" : "inset(100% 0 0 0)",
+          transition: `clip-path 1.4s ${SUBTLE_EASE} ${delay}ms, -webkit-clip-path 1.4s ${SUBTLE_EASE} ${delay}ms`,
+          willChange: "clip-path",
+          ...style,
+        }}
+      >
         {children}
       </div>
     );

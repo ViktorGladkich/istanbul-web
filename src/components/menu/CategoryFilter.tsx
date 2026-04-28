@@ -29,9 +29,9 @@ export function CategoryFilter({
   return (
     <nav
       aria-label={t("filter_label")}
-      className="sticky top-20 z-30 -mx-6 border-y border-[var(--brand-neutral)] bg-[color-mix(in_srgb,var(--brand-bg)_92%,transparent)] backdrop-blur-md md:-mx-12"
+      className="sticky top-20 z-30 border-y border-[var(--brand-neutral)] bg-[color-mix(in_srgb,var(--brand-bg)_92%,transparent)] backdrop-blur-md"
     >
-      <ul className="mx-auto flex max-w-[1600px] gap-x-8 overflow-x-auto px-6 py-5 md:px-12">
+      <ul className="mx-auto flex max-w-[1600px] gap-x-10 overflow-x-auto px-6 py-5 md:gap-x-14 md:px-12 lg:px-16">
         {buttons.map((b) => {
           const active = b.key === value;
           return (
@@ -41,7 +41,7 @@ export function CategoryFilter({
                 onClick={() => b.enabled && onChange(b.key)}
                 disabled={!b.enabled}
                 aria-pressed={active}
-                className={`whitespace-nowrap text-[11px] font-medium uppercase tracking-[0.28em] transition-colors duration-500 ${
+                className={`whitespace-nowrap font-body text-[11px] font-medium uppercase tracking-[0.28em] transition-colors duration-500 ${
                   active
                     ? "text-[var(--brand-text)]"
                     : b.enabled

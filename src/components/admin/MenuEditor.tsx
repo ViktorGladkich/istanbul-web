@@ -5,6 +5,7 @@ import { toast } from "sonner";
 import {
   toggleMenuAvailability,
   updateMenuPrice,
+  toggleFeaturedToday,
 } from "@/app/[locale]/admin/(protected)/menu/actions";
 import type { MenuCategory } from "@/lib/menu";
 
@@ -18,6 +19,7 @@ type AdminMenuItem = {
   isAvailable: boolean;
   isVegetarian: boolean;
   isSpicy: boolean;
+  isFeaturedToday: boolean;
 };
 
 export function MenuEditor({
@@ -67,8 +69,26 @@ function formatEUR(value: number) {
 
 function MenuRow({ item }: { item: AdminMenuItem }) {
   const [available, setAvailable] = useState(item.isAvailable);
+  const [featured, setFeatured] = useState(item.isFeaturedToday);
   const [priceText, setPriceText] = useState(item.price.toFixed(2));
   const [pending, startTransition] = useTransition();
+
+  const onToggleFeatured = () => {
+    const next = !featured;
+    setFeatured(next);
+    startTransition(async () => {
+      try {
+        await toggleFeaturedToday(item.id, next);
+        toast.success(
+          next ? "Heute Abend auf der Bühne" : "Vom Abend genommen",
+        );
+      } catch (err) {
+        console.error(err);
+        setFeatured(!next);
+        toast.error("Konnte nicht gespeichert werden.");
+      }
+    });
+  };
 
   const onToggle = () => {
     const next = !available;
@@ -143,27 +163,47 @@ function MenuRow({ item }: { item: AdminMenuItem }) {
       </div>
 
       <div className="col-span-6 md:col-span-3 md:text-right">
-        <button
-          type="button"
-          onClick={onToggle}
-          disabled={pending}
-          aria-pressed={available}
-          className={[
-            "inline-flex items-center gap-3 border px-5 py-2.5 font-body text-[10px] font-medium uppercase tracking-[0.28em] transition-colors duration-500 disabled:opacity-50",
-            available
-              ? "border-[var(--brand-text)] text-[var(--brand-text)]"
-              : "border-[var(--brand-neutral)] text-[var(--brand-muted)] hover:border-[var(--brand-text)]",
-          ].join(" ")}
-        >
-          <span
-            aria-hidden
+        <div className="flex flex-col items-stretch gap-2 md:items-end">
+          <button
+            type="button"
+            onClick={onToggle}
+            disabled={pending}
+            aria-pressed={available}
             className={[
-              "inline-block h-1.5 w-1.5 rounded-full",
-              available ? "bg-[var(--brand-gold)]" : "bg-[var(--brand-muted)]",
+              "inline-flex items-center gap-3 border px-5 py-2.5 font-body text-[10px] font-medium uppercase tracking-[0.28em] transition-colors duration-500 disabled:opacity-50",
+              available
+                ? "border-[var(--brand-text)] text-[var(--brand-text)]"
+                : "border-[var(--brand-neutral)] text-[var(--brand-muted)] hover:border-[var(--brand-text)]",
             ].join(" ")}
-          />
-          {available ? "Verfügbar" : "Pausiert"}
-        </button>
+          >
+            <span
+              aria-hidden
+              className={[
+                "inline-block h-1.5 w-1.5 rounded-full",
+                available
+                  ? "bg-[var(--brand-gold)]"
+                  : "bg-[var(--brand-muted)]",
+              ].join(" ")}
+            />
+            {available ? "Verfügbar" : "Pausiert"}
+          </button>
+
+          <button
+            type="button"
+            onClick={onToggleFeatured}
+            disabled={pending}
+            aria-pressed={featured}
+            className={[
+              "inline-flex items-center gap-3 border px-5 py-2 font-body text-[10px] font-medium uppercase tracking-[0.28em] transition-colors duration-500 disabled:opacity-50",
+              featured
+                ? "border-[var(--brand-gold)] text-[var(--brand-gold)]"
+                : "border-[var(--brand-neutral)] text-[var(--brand-muted)] hover:border-[var(--brand-gold)] hover:text-[var(--brand-gold)]",
+            ].join(" ")}
+          >
+            <span aria-hidden>★</span>
+            {featured ? "Heute Abend" : "Heute setzen"}
+          </button>
+        </div>
       </div>
     </div>
   );

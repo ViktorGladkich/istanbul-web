@@ -6,6 +6,9 @@
     "about": "Hakkımızda",
     "contact": "İletişim"
   },
+  "common": {
+    "reserve": "Rezervasyon"
+  },
   "hero": {
     "title": "Otantik Türk Mutfağı",
     "subtitle": "İstanbul'un lezzetlerini Dresden'de yaşayın",
@@ -215,6 +218,9 @@
       "error_validation": "Lütfen işaretli alanları kontrol edin.",
       "error_generic": "Siparişi gönderemedik. Lütfen tekrar deneyin."
     }
+  },
+  "tonight": {
+    "eyebrow": "Bu akşam masada"
   },
   "atmosphere": {
     "eyebrow": "İçeride",

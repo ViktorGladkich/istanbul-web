@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage as Image } from "@/components/media/BlurImage";
 import type { MenuCategory } from "@/lib/menu";
 
 const CATEGORY_GRADIENTS: Record<MenuCategory, string> = {

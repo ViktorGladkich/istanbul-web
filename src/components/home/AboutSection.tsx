@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage as Image } from "@/components/media/BlurImage";
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/animation/Reveal";
 
@@ -45,10 +45,10 @@ export function AboutSection() {
           </div>
 
           {/* RIGHT — atmospheric photo */}
-          <Reveal delay={200} className="col-span-12 lg:col-span-5">
+          <Reveal mode="clip" delay={200} className="col-span-12 lg:col-span-5">
             <figure className="relative aspect-[4/5] w-full overflow-hidden bg-[var(--brand-card)]">
               <Image
-                src="/images/about-atmosphere.jpg"
+                src="/images/hommage.jpeg"
                 alt={t("eyebrow")}
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"

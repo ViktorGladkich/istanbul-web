@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage as Image } from "@/components/media/BlurImage";
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/animation/Reveal";
 
@@ -44,7 +44,7 @@ export function GallerySection() {
         <ul className="grid grid-cols-2 gap-1.5 sm:grid-cols-3 md:gap-2 lg:grid-cols-6">
           {TILES.map((tile, i) => (
             <li key={tile.src}>
-              <Reveal delay={(i % 6) * 90}>
+              <Reveal mode="clip" delay={(i % 6) * 90}>
                 <figure className="group relative aspect-square w-full overflow-hidden bg-[var(--brand-card)]">
                   <Image
                     src={tile.src}

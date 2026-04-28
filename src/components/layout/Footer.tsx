@@ -14,7 +14,11 @@ export async function Footer({ locale }: { locale: string }) {
     process.env.NEXT_PUBLIC_RESTAURANT_EMAIL ?? "info@istanbul-dresden.de";
 
   return (
-    <footer className="border-t border-[var(--brand-neutral)] bg-[var(--brand-card)]/40">
+    <footer
+      id="site-footer"
+      data-site-footer
+      className="border-t border-[var(--brand-neutral)] bg-[var(--brand-card)]/40"
+    >
       <div className="mx-auto max-w-[1600px] px-6 py-20 md:px-12 md:py-28">
         <div className="grid grid-cols-12 gap-x-8 gap-y-14">
           <div className="col-span-12 md:col-span-4">

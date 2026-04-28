@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-blur.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "blur": "node scripts/generate-blur.mjs",
     "db:push": "prisma db push",
     "db:studio": "prisma studio",
     "db:generate": "prisma generate",

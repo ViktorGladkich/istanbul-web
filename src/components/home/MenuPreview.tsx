@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage as Image } from "@/components/media/BlurImage";
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/animation/Reveal";
 import { Link } from "@/i18n/navigation";
@@ -68,7 +68,7 @@ export function MenuPreview() {
         <ul className="grid grid-cols-1 gap-12 pb-32 md:grid-cols-3 md:gap-x-10 md:gap-y-16 md:pb-44">
           {DISHES.map((dish, i) => (
             <li key={dish.key}>
-              <Reveal delay={i * 140}>
+              <Reveal mode="clip" delay={i * 140}>
                 <DishCard
                   name={t(`dishes.${dish.key}.name`)}
                   desc={t(`dishes.${dish.key}.desc`)}

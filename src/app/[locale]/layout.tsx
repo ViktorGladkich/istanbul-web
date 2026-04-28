@@ -5,6 +5,10 @@ import { setRequestLocale } from "next-intl/server";
 import { melodrama, boska, satoshi } from "@/lib/fonts";
 import { BrandToaster } from "@/components/providers/BrandToaster";
 import { routing } from "@/i18n/routing";
+import {
+  RestaurantJsonLd,
+  LocalBusinessJsonLd,
+} from "@/components/seo/StructuredData";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -17,6 +21,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL ?? "http://localhost:3000",
   ),
+  openGraph: {
+    type: "website",
+    siteName: "Istanbul Restaurant Dresden",
+    locale: "de_DE",
+    alternateLocale: ["tr_TR", "en_US"],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export function generateStaticParams() {
@@ -41,6 +54,8 @@ export default async function LocaleLayout({
       className={`${melodrama.variable} ${boska.variable} ${satoshi.variable}`}
     >
       <body className="min-h-screen bg-[var(--brand-bg)] text-[var(--brand-text)] font-body antialiased">
+        <RestaurantJsonLd />
+        <LocalBusinessJsonLd />
         <NextIntlClientProvider>
           {children}
           <BrandToaster />

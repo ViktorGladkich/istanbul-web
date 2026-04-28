@@ -3,6 +3,7 @@ import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/animation/Reveal";
 import { MenuView } from "@/components/menu/MenuView";
 import { TableTracker } from "@/components/menu/TableTracker";
+import { MenuStructuredData } from "@/components/seo/MenuStructuredData";
 import { getMenuItems } from "@/lib/menu-server";
 import type { Locale } from "@/lib/menu";
 
@@ -34,6 +35,7 @@ export default async function MenuPage({
 
   return (
     <>
+      <MenuStructuredData locale={locale as Locale} />
       <TableTracker />
       <header className="mx-auto max-w-[1600px] px-6 pb-12 pt-44 md:px-12 md:pb-20 md:pt-56">
         <div className="grid grid-cols-12 gap-x-8 gap-y-10">

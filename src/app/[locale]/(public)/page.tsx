@@ -5,6 +5,9 @@ import { MenuPreview } from "@/components/home/MenuPreview";
 import { AtmosphereSection } from "@/components/home/AtmosphereSection";
 import { GallerySection } from "@/components/home/GallerySection";
 import { LieferandoSection } from "@/components/home/LieferandoSection";
+import { MarqueeStrip } from "@/components/decoration/MarqueeStrip";
+import { TonightsTable } from "@/components/home/TonightsTable";
+import type { Locale } from "@/lib/menu";
 
 export default async function HomePage({
   params,
@@ -18,8 +21,22 @@ export default async function HomePage({
     <>
       <HeroSection />
       <AboutSection />
+      <MarqueeStrip />
+      <TonightsTable locale={locale as Locale} />
       <MenuPreview />
       <AtmosphereSection />
+      <MarqueeStrip
+        words={[
+          "Mezeler",
+          "Künefe",
+          "Lahmacun",
+          "Mantı",
+          "Adana",
+          "İskender",
+          "Baklava",
+        ]}
+        durationSeconds={70}
+      />
       <GallerySection />
       <LieferandoSection />
     </>

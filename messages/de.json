@@ -6,6 +6,9 @@
     "about": "Über uns",
     "contact": "Kontakt"
   },
+  "common": {
+    "reserve": "Reservieren"
+  },
   "hero": {
     "title": "Authentische Türkische Küche",
     "subtitle": "Erleben Sie die Aromen Istanbuls mitten in Dresden",
@@ -215,6 +218,9 @@
       "error_validation": "Bitte prüfen Sie die markierten Felder.",
       "error_generic": "Wir konnten die Bestellung nicht senden. Bitte erneut versuchen."
     }
+  },
+  "tonight": {
+    "eyebrow": "Heute Abend auf dem Tisch"
   },
   "atmosphere": {
     "eyebrow": "Im Haus",

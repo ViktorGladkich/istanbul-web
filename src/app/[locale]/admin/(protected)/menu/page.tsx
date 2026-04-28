@@ -33,6 +33,7 @@ export default async function AdminMenuPage() {
     isAvailable: r.isAvailable,
     isVegetarian: r.isVegetarian,
     isSpicy: r.isSpicy,
+    isFeaturedToday: r.isFeaturedToday,
   }));
 
   return (

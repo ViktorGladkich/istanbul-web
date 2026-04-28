@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { BlurImage as Image } from "@/components/media/BlurImage";
 import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/animation/Reveal";
 
@@ -15,10 +15,10 @@ export function AtmosphereSection() {
       aria-labelledby="atmosphere-title"
       className="relative w-full bg-[var(--brand-bg)] py-20 md:py-32"
     >
-      <Reveal>
+      <Reveal mode="clip">
         <figure className="relative h-[70vh] min-h-[420px] w-full overflow-hidden bg-[var(--brand-card)] md:h-[80vh] md:min-h-[560px]">
           <Image
-            src="/images/atmosphere-wide.jpg"
+            src="/images/haus.jpeg"
             alt={t("eyebrow")}
             fill
             priority={false}
