@@ -15,11 +15,6 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        console.log("ENV EMAIL:", process.env.ADMIN_EMAIL)
-        console.log("ENV HASH exists:", !!process.env.ADMIN_PASSWORD_HASH)
-        console.log("Input email:", credentials?.email)
-        console.log("Input password length:", credentials?.password?.length)
-
         const adminEmail = process.env.ADMIN_EMAIL;
         const adminHash = process.env.ADMIN_PASSWORD_HASH;
         if (!adminEmail || !adminHash) {
@@ -28,18 +23,10 @@ export const authOptions: NextAuthOptions = {
         }
         const email = credentials?.email?.trim().toLowerCase();
         const password = credentials?.password ?? "";
-        
-        console.log("[auth] Login attempt for email:", email);
-        
         if (!email || !password) return null;
-        if (email !== adminEmail.toLowerCase()) {
-          console.log("[auth] Email does not match ADMIN_EMAIL");
-          return null;
-        }
+        if (email !== adminEmail.toLowerCase()) return null;
 
         const ok = await bcrypt.compare(password, adminHash);
-        console.log("[auth] bcrypt.compare result:", ok);
-        
         if (!ok) return null;
 
         return { id: "admin", email: adminEmail, name: "Admin" };

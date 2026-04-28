@@ -9,9 +9,8 @@ import { CartDrawer } from "@/components/cart/CartDrawer";
 
 const NAV_LINKS = [
   { href: "/menu", key: "menu" },
-  { href: "/order", key: "order" },
-  { href: "/#about", key: "about" },
-  { href: "/#contact", key: "contact" },
+  { href: "/about", key: "about" },
+  { href: "/contact", key: "contact" },
 ] as const;
 
 /**

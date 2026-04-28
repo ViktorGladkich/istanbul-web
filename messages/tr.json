@@ -15,7 +15,59 @@
   "about": {
     "eyebrow": "Bizim Evimiz",
     "title": "İstanbul'a sessiz\nbir saygı duruşu.",
-    "body": "Üç kuşak, tek bir mutfak. Bu akşam ağırlayacağımız sınırlı sayıda misafir için pişiriyoruz — baharatlarımızı kendimiz kavuruyor, ekmeğimizi elde yoğuruyoruz. Gösteriş yok. Yalnızca lezzet."
+    "body": "Üç kuşak, tek bir mutfak. Bu akşam ağırlayacağımız sınırlı sayıda misafir için pişiriyoruz — baharatlarımızı kendimiz kavuruyor, ekmeğimizi elde yoğuruyoruz. Gösteriş yok. Yalnızca lezzet.",
+    "page_title": "Üç kuşak,\ntek mutfak.",
+    "lede": "Elbe kıyısında küçük bir mutfak — annemizin Adana'da pilavını karıştırırken gösterdiği aynı sabırla yönetilen bir yer.",
+    "story": {
+      "eyebrow": "Hikâye",
+      "title": "Her şey nasıl başladı.",
+      "p1": "1987'de Mehmet Yıldız, Elbe kıyısındaki küçük bir mutfağın kapılarını açtı. Annesinin Adana'da pişirdiklerini pişiriyordu: uzun ateşte demlenmiş patlıcan, taze kıyılmış kuzu, elle yoğurduğu ekmek.",
+      "p2": "Bugün aynı mutfakta üç kuşak çalışıyor. Baharatlarımızı hâlâ kendimiz kavuruyoruz — her sabah, ilk misafir gelmeden. Yirmi yıldır birlikte çalıştığımız aynı dört çiftçiden, küçük partiler hâlinde alışveriş ediyoruz.",
+      "p3": "Değişmeyen şey şu: ekmek elle yoğruluyor. Domatesler Saksonya'daki bir bahçeden geliyor. Yoğurt mutfağımızda mayalanıyor. Ve biz binler için değil — o akşam ağırladığımız az sayıdaki misafir için pişiriyoruz."
+    },
+    "quote": {
+      "text": "Biz çoklar için pişirmiyoruz. Bu akşam gelecek olan masa için pişiriyoruz.",
+      "author": "Mehmet Yıldız",
+      "role": "Kurucu"
+    },
+    "values": {
+      "eyebrow": "Bizi yönlendiren",
+      "title": "Üç el.\nBir söz.",
+      "items": {
+        "hand": {
+          "title": "Elle",
+          "body": "Ekmek, yoğurt, mezeler — hepsi mutfağımızda hazırlanıyor. Kendimiz hazırlayamayacağımız hiçbir malzeme tabağa girmez."
+        },
+        "patience": {
+          "title": "Sabırla",
+          "body": "Bazı yemekler sekiz saat demlenir. Vakit ayırırız çünkü lezzetin zamana ihtiyacı vardır — ve misafir bunu tadabilir."
+        },
+        "place": {
+          "title": "Yöre ile",
+          "body": "Domateslerimiz Saksonya'da yetişiyor. Kuzumuz Erzgebirge'den geliyor. Dresden'de bir Türk mutfağı — ve bu damağa da yansıyor."
+        }
+      }
+    },
+    "cta": "Menüyü görüntüle"
+  },
+  "contact": {
+    "eyebrow": "Bize gelin",
+    "title": "Sizi ağırlamak için\nsabırsızlanıyoruz.",
+    "lede": "Rezervasyonlar telefon veya e-posta ile. Büyük masalar ve özel günler için bize yazın — akşamınızı biz hazırlarız.",
+    "labels": {
+      "address": "Adres",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "hours": "Çalışma Saatleri",
+      "map": "Harita"
+    },
+    "hours_value": "Pzt – Cmt\n12:00 – 23:00\n\nPazar\n13:00 – 22:00",
+    "cta_call": "Ara",
+    "cta_directions": "Google Haritalar'da yol tarifi",
+    "reservation": {
+      "eyebrow": "Rezervasyon",
+      "body": "Lütfen telefon ya da e-posta ile rezervasyon yapın. Genellikle aynı gün içinde dönüş yapıyoruz."
+    }
   },
   "menu_preview": {
     "eyebrow": "Mutfaktan",
@@ -162,6 +214,22 @@
       "success": "Sipariş gönderildi — ocak yanıyor.",
       "error_validation": "Lütfen işaretli alanları kontrol edin.",
       "error_generic": "Siparişi gönderemedik. Lütfen tekrar deneyin."
+    }
+  },
+  "atmosphere": {
+    "eyebrow": "İçeride",
+    "title": "Elbe kıyısında\nküçük bir mutfak.",
+    "lede": "Sıcak bir ışık, sessiz sesler, taze kavrulmuş kimyonun kokusu."
+  },
+  "gallery": {
+    "eyebrow": "Mutfaktan",
+    "alt": {
+      "adana": "Kömür ateşinde Adana Kebap",
+      "imam": "İmam Bayıldı — yavaş pişmiş patlıcan",
+      "kunefe": "Sıcak şerbetli künefe",
+      "baklava": "Antep fıstıklı baklava",
+      "iskender": "İskender Kebap",
+      "manti": "Yoğurtlu mantı"
     }
   },
   "lieferando": {

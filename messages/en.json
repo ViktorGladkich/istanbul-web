@@ -15,7 +15,59 @@
   "about": {
     "eyebrow": "Our House",
     "title": "A quiet homage\nto İstanbul.",
-    "body": "Three generations, a single kitchen. We cook for the few guests we welcome tonight — with spices we toast ourselves and bread we knead by hand. No spectacle. Just taste."
+    "body": "Three generations, a single kitchen. We cook for the few guests we welcome tonight — with spices we toast ourselves and bread we knead by hand. No spectacle. Just taste.",
+    "page_title": "Three generations.\nOne kitchen.",
+    "lede": "A small kitchen by the Elbe — run with the same patience our mother used when she stirred her pilav in Adana.",
+    "story": {
+      "eyebrow": "Story",
+      "title": "How it started.",
+      "p1": "In 1987 Mehmet Yıldız opened the doors of a small kitchen by the river. He cooked what his mother had cooked in Adana: long-braised aubergine, hand-cut lamb, bread he kneaded himself.",
+      "p2": "Today three generations work in the same kitchen. We still toast our spices ourselves — every morning, before the first guest arrives. We buy in small quantities, from the same four farmers we've worked with for twenty years.",
+      "p3": "What hasn't changed: bread is kneaded by hand. The tomatoes come from a garden in Saxony. The yoghurt is set in our kitchen. And we cook for the few guests we welcome that evening — not for a thousand."
+    },
+    "quote": {
+      "text": "We don't cook for many. We cook for the table that arrives tonight.",
+      "author": "Mehmet Yıldız",
+      "role": "Founder"
+    },
+    "values": {
+      "eyebrow": "What guides us",
+      "title": "Three hands.\nOne promise.",
+      "items": {
+        "hand": {
+          "title": "By hand",
+          "body": "Bread, yoghurt, mezeler — everything is made in our kitchen. No ingredient we couldn't prepare ourselves reaches the plate."
+        },
+        "patience": {
+          "title": "With patience",
+          "body": "Some dishes braise for eight hours. We take the time because flavour takes time — and because a guest can taste it."
+        },
+        "place": {
+          "title": "Of place",
+          "body": "Our tomatoes grow in Saxony. Our lamb comes from the Erzgebirge. A Turkish kitchen in Dresden — and you can taste it."
+        }
+      }
+    },
+    "cta": "View the menu"
+  },
+  "contact": {
+    "eyebrow": "Come visit",
+    "title": "We look forward\nto your visit.",
+    "lede": "Reservations by phone or email. For larger tables and special occasions just write — we'll set the evening for you.",
+    "labels": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Opening Hours",
+      "map": "Map"
+    },
+    "hours_value": "Mon – Sat\n12:00 – 23:00\n\nSunday\n13:00 – 22:00",
+    "cta_call": "Call us",
+    "cta_directions": "Directions in Google Maps",
+    "reservation": {
+      "eyebrow": "Reservation",
+      "body": "Please reserve by phone or email. We usually respond the same day."
+    }
   },
   "menu_preview": {
     "eyebrow": "From the Kitchen",
@@ -162,6 +214,22 @@
       "success": "Order placed — the kitchen is on it.",
       "error_validation": "Please check the highlighted fields.",
       "error_generic": "We couldn't send the order. Please try again."
+    }
+  },
+  "atmosphere": {
+    "eyebrow": "Inside",
+    "title": "A small kitchen\nby the Elbe.",
+    "lede": "Warm light, quiet voices, the scent of freshly toasted cumin."
+  },
+  "gallery": {
+    "eyebrow": "From the Kitchen",
+    "alt": {
+      "adana": "Adana Kebap over charcoal",
+      "imam": "İmam Bayıldı — slow-braised aubergine",
+      "kunefe": "Künefe with warm syrup",
+      "baklava": "Pistachio baklava",
+      "iskender": "İskender Kebap",
+      "manti": "Mantı with yoghurt"
     }
   },
   "lieferando": {

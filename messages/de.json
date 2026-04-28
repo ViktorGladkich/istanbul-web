@@ -216,6 +216,22 @@
       "error_generic": "Wir konnten die Bestellung nicht senden. Bitte erneut versuchen."
     }
   },
+  "atmosphere": {
+    "eyebrow": "Im Haus",
+    "title": "Eine kleine Küche\nan der Elbe.",
+    "lede": "Warmes Licht, leise Stimmen, der Geruch von frisch geröstetem Kreuzkümmel."
+  },
+  "gallery": {
+    "eyebrow": "Aus der Küche",
+    "alt": {
+      "adana": "Adana Kebap auf Holzkohle",
+      "imam": "İmam Bayıldı — geschmorte Aubergine",
+      "kunefe": "Künefe mit warmem Sirup",
+      "baklava": "Baklava mit Pistazien",
+      "iskender": "İskender Kebap",
+      "manti": "Mantı mit Joghurt"
+    }
+  },
   "lieferando": {
     "eyebrow": "Lieferung",
     "title": "Liefern lassen?\nÜber Lieferando.",
