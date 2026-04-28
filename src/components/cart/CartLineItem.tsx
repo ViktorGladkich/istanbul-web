@@ -15,11 +15,9 @@ function formatPrice(value: number, locale: string) {
 export function CartLineItem({ item }: { item: CartItem }) {
   const t = useTranslations("cart");
   const locale = useLocale();
-  const { increment, decrement, remove } = useCart((s) => ({
-    increment: s.increment,
-    decrement: s.decrement,
-    remove: s.remove,
-  }));
+  const increment = useCart((s) => s.increment);
+  const decrement = useCart((s) => s.decrement);
+  const remove = useCart((s) => s.remove);
 
   return (
     <li className="flex gap-5 border-b border-[var(--brand-neutral)] py-6 last:border-b-0">

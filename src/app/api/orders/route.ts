@@ -95,7 +95,6 @@ export async function POST(req: Request) {
     hdrs.get("referer")?.replace(/(https?:\/\/[^/]+).*/, "$1") ||
     process.env.NEXT_PUBLIC_APP_URL ||
     "http://localhost:3000";
-
   const localePath = data.locale === "de" ? "" : `/${data.locale}`;
 
   try {
@@ -115,7 +114,6 @@ export async function POST(req: Request) {
             product_data: {
               name,
               ...(desc ? { description: desc } : {}),
-              ...(l.db.imageUrl ? { images: [l.db.imageUrl] } : {}),
               metadata: { menuItemId: l.db.id },
             },
           },

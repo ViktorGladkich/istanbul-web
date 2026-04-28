@@ -38,12 +38,12 @@ export function MenuPreview() {
     <section
       id="menu-preview"
       aria-labelledby="menu-preview-title"
-      className="relative bg-[var(--brand-bg)]"
+      className="relative bg-(--brand-bg)"
     >
       <div className="mx-auto max-w-[1600px] px-6 md:px-12">
         <div className="grid grid-cols-12 gap-x-8 gap-y-12 pb-20 pt-24 md:pb-28 md:pt-32">
           <Reveal className="col-span-12 md:col-span-3 md:pt-3">
-            <span className="font-body text-[11px] font-light uppercase tracking-[0.32em] text-[var(--brand-muted)]">
+            <span className="font-body text-[11px] font-light uppercase tracking-[0.32em] text-brand-muted">
               {t("eyebrow")}
             </span>
           </Reveal>
@@ -52,13 +52,13 @@ export function MenuPreview() {
             <Reveal delay={120}>
               <h2
                 id="menu-preview-title"
-                className="font-display font-normal leading-[1.02] tracking-[-0.01em] text-[var(--brand-text)] text-[clamp(2.5rem,5vw,5rem)]"
+                className="font-display font-normal leading-[1.02] tracking-[-0.01em] text-(--brand-text) text-[clamp(2.5rem,5vw,5rem)]"
               >
                 {t("title")}
               </h2>
             </Reveal>
             <Reveal delay={240}>
-              <p className="max-w-md font-body text-sm font-light uppercase tracking-[0.22em] text-[var(--brand-muted)]">
+              <p className="max-w-md font-body text-sm font-light uppercase tracking-[0.22em] text-brand-muted">
                 {t("lede")}
               </p>
             </Reveal>
@@ -85,7 +85,7 @@ export function MenuPreview() {
           <div className="flex justify-center pb-32 md:pb-44">
             <Link
               href="/menu"
-              className="inline-flex items-center justify-center border border-[var(--brand-text)] px-9 py-4 text-[11px] font-medium uppercase tracking-[0.28em] text-[var(--brand-text)] transition-colors duration-700 ease-out hover:border-[var(--brand-terra)] hover:text-[var(--brand-terra)]"
+              className="inline-flex items-center justify-center border border-(--brand-text) px-9 py-4 text-[11px] font-medium uppercase tracking-[0.28em] text-(--brand-text) transition-colors duration-700 ease-out hover:border-[var(--brand-terra)] hover:text-[var(--brand-terra)]"
             >
               {t("cta")}
             </Link>

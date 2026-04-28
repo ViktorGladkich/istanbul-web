@@ -2,9 +2,14 @@
 
 import { useEffect } from "react";
 import Lenis from "lenis";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 export function SmoothScroll({ children }: { children: React.ReactNode }) {
+  const reduced = useReducedMotion();
+
   useEffect(() => {
+    if (reduced) return;
+
     const lenis = new Lenis({
       lerp: 0.08,
       smoothWheel: true,
@@ -23,7 +28,7 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
       cancelAnimationFrame(rafId);
       lenis.destroy();
     };
-  }, []);
+  }, [reduced]);
 
   return <>{children}</>;
 }

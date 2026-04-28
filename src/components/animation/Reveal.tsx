@@ -2,6 +2,7 @@
 
 import { useInView } from "react-intersection-observer";
 import type { CSSProperties, ReactNode } from "react";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 const SUBTLE_EASE = "cubic-bezier(0.22, 1, 0.36, 1)";
 
@@ -23,6 +24,15 @@ export function Reveal({
   distance = 30,
 }: Props) {
   const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const reduced = useReducedMotion();
+
+  if (reduced) {
+    return (
+      <div ref={ref} className={className} style={style}>
+        {children}
+      </div>
+    );
+  }
 
   return (
     <div
