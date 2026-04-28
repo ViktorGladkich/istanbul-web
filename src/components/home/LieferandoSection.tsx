@@ -10,9 +10,9 @@ export function LieferandoSection() {
   const t = useTranslations("lieferando");
 
   return (
-    <section className="mx-auto max-w-[1600px] px-6 py-32 md:px-12 md:py-44">
-      <div className="border-t border-[var(--brand-neutral)] pt-16 md:pt-24">
-        <div className="grid grid-cols-12 gap-x-8 gap-y-12">
+    <section className="relative bg-[var(--brand-bg)]">
+      <div className="mx-auto max-w-[1600px] px-6 py-32 md:px-12 md:py-44">
+        <div className="grid grid-cols-12 gap-x-8 gap-y-12 border-t border-[var(--brand-neutral)] pt-16 md:pt-24">
           <Reveal className="col-span-12 md:col-span-3 md:pt-3">
             <span className="font-body text-[11px] font-light uppercase tracking-[0.32em] text-[var(--brand-muted)]">
               {t("eyebrow")}

@@ -75,8 +75,8 @@ export function MenuView({
 
               <ul className="grid grid-cols-1 gap-12 sm:grid-cols-2 md:gap-x-10 md:gap-y-16 lg:grid-cols-3 xl:grid-cols-4">
                 {categoryItems.map((item, i) => (
-                  <li key={item.id}>
-                    <Reveal delay={(i % 4) * 120}>
+                  <li key={item.id} className="h-full">
+                    <Reveal delay={(i % 4) * 120} className="h-full">
                       <MenuCard item={item} locale={locale} />
                     </Reveal>
                   </li>

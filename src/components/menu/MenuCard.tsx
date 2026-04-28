@@ -40,14 +40,14 @@ export function MenuCard({
   };
 
   return (
-    <article className="group flex flex-col gap-7">
+    <article className="group flex h-full flex-col gap-7">
       <MenuItemMedia
         name={item.name}
         imageUrl={item.imageUrl}
         category={item.category}
       />
 
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-1 flex-col gap-3">
         <header className="flex items-baseline justify-between gap-6">
           <h3 className="font-display font-normal leading-[1.05] tracking-[-0.005em] text-[var(--brand-text)] text-2xl md:text-[1.75rem]">
             {item.name}
@@ -63,7 +63,7 @@ export function MenuCard({
           </p>
         )}
 
-        <div className="mt-3 flex items-center justify-between gap-4">
+        <div className="mt-auto pt-2 flex items-center justify-between gap-4">
           <ul className="flex items-center gap-3 text-[10px] font-medium uppercase tracking-[0.22em] text-[var(--brand-muted)]">
             {item.isVegetarian && <li>{t("tags.vegetarian")}</li>}
             {item.isSpicy && <li>{t("tags.spicy")}</li>}

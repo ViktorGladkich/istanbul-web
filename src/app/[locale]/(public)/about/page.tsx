@@ -34,7 +34,7 @@ export default async function AboutPage({
       <header className="mx-auto max-w-[1600px] px-6 pb-16 pt-44 md:px-12 md:pb-24 md:pt-56">
         <div className="grid grid-cols-12 gap-x-8 gap-y-10">
           <Reveal className="col-span-12 md:col-span-3 md:pt-3">
-            <span className="font-body text-[11px] font-light uppercase tracking-[0.32em] text-[var(--brand-muted)]">
+            <span className="font-body text-[11px] font-light uppercase tracking-[0.32em] text-brand-muted">
               {t("eyebrow")}
             </span>
           </Reveal>
@@ -118,7 +118,7 @@ export default async function AboutPage({
         <div className="mx-auto max-w-[1400px] px-6 md:px-12">
           <div className="grid grid-cols-12 items-center gap-x-12 gap-y-12">
             <Reveal mode="clip" className="col-span-12 md:col-span-5">
-              <figure className="relative aspect-[4/5] w-full overflow-hidden bg-[var(--brand-bg)]">
+              <figure className="relative aspect-[4/5] w-full overflow-hidden bg-(--brand-bg)">
                 <Image
                   src="/images/grunder.jpeg"
                   alt={t("quote.author")}

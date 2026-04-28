@@ -39,7 +39,7 @@ export async function TonightsTable({ locale }: { locale: Locale }) {
   return (
     <section
       aria-labelledby="tonight-title"
-      className="relative bg-[var(--brand-card)]/50"
+      className="relative bg-[var(--brand-card)]"
     >
       <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-12 md:py-36">
         <div className="grid grid-cols-12 items-center gap-x-12 gap-y-10">

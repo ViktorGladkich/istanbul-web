@@ -222,6 +222,32 @@
   "tonight": {
     "eyebrow": "On the table tonight"
   },
+  "journey": {
+    "eyebrow": "A journey",
+    "title": "From Adana\nto the Elbe.",
+    "panels": {
+      "p1": {
+        "eyebrow": "1987",
+        "title": "First kitchen",
+        "body": "Mehmet opened the doors of a small kitchen by the Elbe. He cooked what his mother had cooked in Adana."
+      },
+      "p2": {
+        "eyebrow": "Family",
+        "title": "Three generations,\none hand",
+        "body": "Today we knead the bread between three of us. The gesture hasn't changed."
+      },
+      "p3": {
+        "eyebrow": "From the garden",
+        "title": "Saxon\ntomatoes",
+        "body": "The same four farmers. For twenty years. Small, personal, precise."
+      },
+      "p4": {
+        "eyebrow": "Today",
+        "title": "This evening,\nthis table",
+        "body": "We cook for the guests who arrive tonight. Not for a thousand. For you."
+      }
+    }
+  },
   "atmosphere": {
     "eyebrow": "Inside",
     "title": "A small kitchen\nby the Elbe.",

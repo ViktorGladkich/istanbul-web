@@ -31,6 +31,14 @@ const fadeUp: Variants = {
   }),
 };
 
+/**
+ * Hero is sticky to the very top of the document for the full scroll. The
+ * sections that follow have opaque backgrounds and paint on top — so as the
+ * user scrolls, the next section literally rises up over the hero.
+ *
+ * Layout uses flex-col with the eyebrow anchored top (with breathing room
+ * from the navbar) and the title/subtitle/CTAs anchored bottom.
+ */
 export function HeroSection() {
   const t = useTranslations("hero");
   const title = t("title");
@@ -39,11 +47,12 @@ export function HeroSection() {
     <section
       aria-label="Hero"
       data-hero
-      className="relative isolate flex min-h-screen w-full items-end overflow-hidden"
+      className="sticky top-0 z-0 isolate flex h-screen w-full flex-col overflow-hidden"
     >
       <VideoBackdrop />
 
-      <div className="relative z-10 mx-auto flex w-full max-w-[1600px] flex-col gap-12 px-6 pb-20 pt-40 md:px-12 md:pb-28 md:pt-48">
+      {/* TOP — eyebrow, well clear of the navbar */}
+      <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 pt-44 md:px-12 md:pt-36">
         <motion.span
           variants={fadeUp}
           custom={0.1}
@@ -53,7 +62,13 @@ export function HeroSection() {
         >
           Istanbul · Dresden
         </motion.span>
+      </div>
 
+      {/* SPACER — pushes the bottom block to the bottom of the viewport */}
+      <div className="flex-1" aria-hidden />
+
+      {/* BOTTOM — title, subtitle, CTAs */}
+      <div className="relative z-10 mx-auto flex w-full max-w-[1600px] flex-col gap-10 px-6 pb-20 md:px-12 md:pb-28">
         <AnimatedTitle text={title} />
 
         <motion.p
@@ -145,7 +160,7 @@ function VideoBackdrop() {
         muted
         loop
         playsInline
-        className="absolute inset-0 h-full w-full object-cover hidden md:block"
+        className="absolute inset-0 hidden h-full w-full object-cover md:block"
       >
         <source src="/video/hero_deckstop.mp4" type="video/mp4" />
       </video>
@@ -166,7 +181,6 @@ function VideoBackdrop() {
             "linear-gradient(to bottom, rgba(26,20,16,0.4) 0%, rgba(26,20,16,0.55) 60%, rgba(12,8,5,0.85) 100%)",
         }}
       />
-      {/* faint warm glow bottom-left, evokes candlelight */}
       <div
         className="absolute inset-0 opacity-60 mix-blend-screen"
         style={{

@@ -222,6 +222,32 @@
   "tonight": {
     "eyebrow": "Heute Abend auf dem Tisch"
   },
+  "journey": {
+    "eyebrow": "Eine Reise",
+    "title": "Von Adana\nan die Elbe.",
+    "panels": {
+      "p1": {
+        "eyebrow": "1987",
+        "title": "Erste Küche",
+        "body": "Mehmet öffnete die Türen einer kleinen Küche an der Elbe. Er kochte das, was seine Mutter in Adana gekocht hatte."
+      },
+      "p2": {
+        "eyebrow": "Familie",
+        "title": "Drei Generationen,\neine Hand",
+        "body": "Heute schlagen wir das Brot zu dritt. Die Geste hat sich nicht verändert."
+      },
+      "p3": {
+        "eyebrow": "Aus dem Garten",
+        "title": "Sächsische\nTomaten",
+        "body": "Dieselben vier Bauern. Seit zwanzig Jahren. Klein, persönlich, präzise."
+      },
+      "p4": {
+        "eyebrow": "Heute",
+        "title": "Dieser Abend,\ndieser Tisch",
+        "body": "Wir kochen für die Gäste, die heute kommen. Nicht für tausend. Für Sie."
+      }
+    }
+  },
   "atmosphere": {
     "eyebrow": "Im Haus",
     "title": "Eine kleine Küche\nan der Elbe.",

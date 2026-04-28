@@ -4,6 +4,7 @@ import { AboutSection } from "@/components/home/AboutSection";
 import { MenuPreview } from "@/components/home/MenuPreview";
 import { AtmosphereSection } from "@/components/home/AtmosphereSection";
 import { GallerySection } from "@/components/home/GallerySection";
+import { JourneySection } from "@/components/home/JourneySection";
 import { LieferandoSection } from "@/components/home/LieferandoSection";
 import { MarqueeStrip } from "@/components/decoration/MarqueeStrip";
 import { TonightsTable } from "@/components/home/TonightsTable";
@@ -25,6 +26,7 @@ export default async function HomePage({
       <TonightsTable locale={locale as Locale} />
       <MenuPreview />
       <AtmosphereSection />
+      <JourneySection />
       <MarqueeStrip
         words={[
           "Mezeler",

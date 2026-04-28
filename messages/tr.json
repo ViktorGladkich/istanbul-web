@@ -222,6 +222,32 @@
   "tonight": {
     "eyebrow": "Bu akşam masada"
   },
+  "journey": {
+    "eyebrow": "Bir yolculuk",
+    "title": "Adana'dan\nElbe kıyısına.",
+    "panels": {
+      "p1": {
+        "eyebrow": "1987",
+        "title": "İlk mutfak",
+        "body": "Mehmet, Elbe kıyısındaki küçük bir mutfağın kapılarını açtı. Annesinin Adana'da pişirdiği yemekleri pişirdi."
+      },
+      "p2": {
+        "eyebrow": "Aile",
+        "title": "Üç kuşak,\ntek el",
+        "body": "Bugün ekmeği üç el yoğuruyor. Hareket değişmedi."
+      },
+      "p3": {
+        "eyebrow": "Bahçeden",
+        "title": "Saksonya\ndomatesleri",
+        "body": "Aynı dört çiftçi. Yirmi yıldır. Küçük, kişisel, dikkatli."
+      },
+      "p4": {
+        "eyebrow": "Bugün",
+        "title": "Bu akşam,\nbu masa",
+        "body": "Bugün gelen misafirler için pişiriyoruz. Binler için değil. Sizin için."
+      }
+    }
+  },
   "atmosphere": {
     "eyebrow": "İçeride",
     "title": "Elbe kıyısında\nküçük bir mutfak.",
